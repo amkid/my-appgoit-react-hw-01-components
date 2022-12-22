@@ -1,0 +1,99 @@
+Get all products
+              
+
+fetch('https://dummyjson.com/products')
+.then(res => res.json())
+.then(console.log);
+            
+
+           
+              
+
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 9",
+      "description": "An apple mobile which is nothing like apple",
+      "price": 549,
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "thumbnail": "...",
+      "images": ["...", "...", "..."]
+    },
+    {...},
+    {...},
+    {...}
+    // 30 items
+  ],
+
+  "total": 100,
+  "skip": 0,
+  "limit": 30
+}
+
+________________________________________________
+
+Get a single product
+              
+
+fetch('https://dummyjson.com/products/1')
+.then(res => res.json())
+.then(console.log);
+            
+
+           
+              
+
+{
+  "id": 1,
+  "title": "iPhone 9",
+  "description": "An apple mobile which is nothing like apple",
+  "price": 549,
+  "discountPercentage": 12.96,
+  "rating": 4.69,
+  "stock": 94,
+  "brand": "Apple",
+  "category": "smartphones",
+  "thumbnail": "...",
+  "images": ["...", "...", "..."]
+}
+
+________________________________________________
+
+Get all products categories
+              
+
+fetch('https://dummyjson.com/products/categories')
+.then(res => res.json())
+.then(console.log);
+            
+
+           
+              
+
+[
+  "smartphones",
+  "laptops",
+  "fragrances",
+  "skincare",
+  "groceries",
+  "home-decoration",
+  "furniture",
+  "tops",
+  "womens-dresses",
+  "womens-shoes",
+  "mens-shirts",
+  "mens-shoes",
+  "mens-watches",
+  "womens-watches",
+  "womens-bags",
+  "womens-jewellery",
+  "sunglasses",
+  "automotive",
+  "motorcycle",
+  "lighting"
+]
